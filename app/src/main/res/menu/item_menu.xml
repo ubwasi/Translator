@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/info"
+        android:title="Developer info"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/about"
+        android:iconTint="#ffffff"
+        />
+
+    <item android:id="@+id/share"
+        android:title="Share App"
+        android:icon="@drawable/share"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/white"
+        />
+
+</menu>

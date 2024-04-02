@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2196F3"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/white"
+        app:title="English To Spanish Translator"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/item_menu"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_forward_24"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spanish"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_weight="1"
+
+            />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="7dp"
+        android:background="@color/white"
+        >
+        <EditText
+            android:id="@+id/writing_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Writing here"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:inputType=""
+            android:textColor="@color/black"
+            android:layout_marginBottom="50dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"
+            >
+
+
+            <ImageButton
+                android:id="@+id/copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/copy"
+                android:layout_weight="1"
+                />
+
+            <ImageButton
+                android:id="@+id/spek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spek"
+                android:layout_weight="1"
+                />
+            <ImageButton
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Translate"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#8D1AA1"
+        />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="7dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/answer_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:hint="Asnwer Here"
+            android:textAlignment="center"
+            android:layout_marginTop="3dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/progresssBar"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"
+            >
+
+
+            <ImageButton
+                android:id="@+id/copy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/copy"
+                android:layout_weight="1"
+                />
+
+            <ImageButton
+                android:id="@+id/spek2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/spek"
+                android:layout_weight="1"
+                />
+            <ImageButton
+                android:id="@+id/clear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/clear"
+                android:layout_weight="1"
+                />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
